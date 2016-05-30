@@ -5,8 +5,8 @@
 // the 2nd parameter is an array of 'requires'
 angular.module('todo', ['ionic'])
 
-.run(function($ionicPlatform) {
-    $ionicPlatform.ready(function() {
+.run(($ionicPlatform) => {
+    $ionicPlatform.ready(() => {
         if(window.cordova && window.cordova.plugins.Keyboard) {
             // Hide the accessory bar by default (remove this to show the accessory bar above the keyboard
             // for form inputs)
