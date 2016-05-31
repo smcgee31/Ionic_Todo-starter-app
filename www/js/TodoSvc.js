@@ -8,7 +8,7 @@ angular.module('todo')
             {title: 'Find the Princess'}
         ];
 
-        this.getTasks = function() {
+        this.getTasks = () => {
             return tasks;
         };
 
